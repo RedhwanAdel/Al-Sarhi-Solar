@@ -6,6 +6,10 @@
     <title>المهندس عبد الرحمن السرحي | للطاقة الشمسية والكهرباء</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
+      href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap"
       rel="stylesheet"
     />
@@ -201,77 +205,133 @@
           <span class="text-3xl font-black italic">GROWATT</span>
           <span class="text-3xl font-black italic">FELICITY</span>
           <span class="text-3xl font-black italic">JINKO SOLAR</span>
-          <span class="text-3xl font-black italic">SCHNEIDER</span>
-          <span class="text-3xl font-black italic">MUST</span>
+          <span class="text-3xl font-black italic">TRINASOLAR</span>
+          <span class="text-3xl font-black italic">MOTOMA</span>
+          <span class="text-3xl font-black italic">DYNESS</span>
+          <span class="text-3xl font-black italic">DEYE</span>
         </div>
       </div>
     </section>
 
     <section id="gallery" class="py-20 bg-white">
       <div class="container mx-auto px-6">
-        <div class="flex justify-between items-end mb-12">
-          <div>
-            <h2 class="text-4xl font-black text-solar-navy mb-2">
-              معرض المشاريع
-            </h2>
-            <p class="text-gray-500 font-bold">صور حقيقية من مواقع العمل</p>
-          </div>
-          <a
-            href="#"
-            class="text-solar-navy font-bold hover:text-solar-yellow transition"
-            >عرض الكل ←</a
-          >
+        <div class="mb-12">
+          <h2 class="text-4xl font-black text-solar-navy mb-2">
+            معرض المشاريع
+          </h2>
+          <p class="text-gray-500 font-bold">
+            اضغط على أي مشروع لمشاهدة كافة التفاصيل
+          </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div
-            class="relative group rounded-3xl overflow-hidden shadow-2xl h-80"
+            class="relative group rounded-3xl overflow-hidden shadow-2xl h-80 block cursor-pointer"
           >
-            <img
-              src="./images/s1.avif"
-              class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
-            />
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-solar-navy to-transparent opacity-80 flex flex-col justify-end p-6 text-white"
+            <a
+              href="./images/g1.jpeg"
+              class="glightbox block h-full"
+              data-gallery="project1"
+              data-title="المشروع الأول: منظومة منزلية "
             >
-              <h4 class="font-bold text-xl">منظومة منزلية متكاملة</h4>
-              <p class="text-sm opacity-70">تركيب نظام 5KW مع بطاريات ليثيوم</p>
+              <img
+                src="./images/g1.jpeg"
+                class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+                alt="مشروع 1"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-solar-navy to-transparent opacity-80 flex flex-col justify-end p-6 text-white"
+              >
+                <h4 class="font-bold text-xl text-solar-yellow">
+                  منظومة منزلية متكاملة
+                </h4>
+                <p class="text-sm opacity-90">مشاهدة صور المشروع (3 صور) ←</p>
+              </div>
+            </a>
+            <div class="hidden">
+              <a
+                href="./images/g1.1.jpeg"
+                class="glightbox"
+                data-gallery="project1"
+                data-title="المشروع الأول: لوحة التوزيع"
+              ></a>
+              <a
+                href="./images/g1.2.jpeg"
+                class="glightbox"
+                data-gallery="project1"
+                data-title="المشروع الأول: الألواح الشمسية"
+              ></a>
             </div>
           </div>
+
           <div
-            class="relative group rounded-3xl overflow-hidden shadow-2xl h-80"
+            class="relative group rounded-3xl overflow-hidden shadow-2xl h-80 block cursor-pointer"
           >
-            <img
-              src="./images/s2.avif"
-              class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
-            />
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-solar-navy to-transparent opacity-80 flex flex-col justify-end p-6 text-white"
+            <a
+              href="./images/g2.jpeg"
+              class="glightbox block h-full"
+              data-gallery="project2"
+              data-title="المشروع الثاني: لوحة تحكم - الواجهة"
             >
-              <h4 class="font-bold text-xl">لوحة تحكم صناعي</h4>
-              <p class="text-sm opacity-70">تأسيس لوحة تشغيل مضخة زراعية</p>
+              <img
+                src="./images/g2.jpeg"
+                class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+                alt="مشروع 2"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-solar-navy to-transparent opacity-80 flex flex-col justify-end p-6 text-white"
+              >
+                <h4 class="font-bold text-xl text-solar-yellow">
+                  لوحة تحكم صناعي
+                </h4>
+                <p class="text-sm opacity-90">مشاهدة صور المشروع (2 صور) ←</p>
+              </div>
+            </a>
+            <div class="hidden">
+              <a
+                href="./images/g2-2.jpeg"
+                class="glightbox"
+                data-gallery="project2"
+                data-title="المشروع الثاني: التمديدات الداخلية"
+              ></a>
             </div>
           </div>
+
           <div
-            class="relative group rounded-3xl overflow-hidden shadow-2xl h-80"
+            class="relative group rounded-3xl overflow-hidden shadow-2xl h-80 block cursor-pointer"
           >
-            <img
-              src="./images/s1.avif"
-              class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
-            />
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-solar-navy to-transparent opacity-80 flex flex-col justify-end p-6 text-white"
+            <a
+              href="./images/g3.jpeg"
+              class="glightbox block h-full"
+              data-gallery="project3"
+              data-title="المشروع الثالث: تمديدات فيلا - الطابق الأول"
             >
-              <h4 class="font-bold text-xl">تمديدات فيلا سكنية</h4>
-              <p class="text-sm opacity-70">
-                أعمال تأسيس الكهرباء للأسقف والجدران
-              </p>
+              <img
+                src="./images/g3.jpeg"
+                class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+                alt="مشروع 3"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-solar-navy to-transparent opacity-80 flex flex-col justify-end p-6 text-white"
+              >
+                <h4 class="font-bold text-xl text-solar-yellow">
+                  تمديدات فيلا سكنية
+                </h4>
+                <p class="text-sm opacity-90">مشاهدة صور المشروع (2 صور) ←</p>
+              </div>
+            </a>
+            <div class="hidden">
+              <a
+                href="./images/g3-2.jpeg"
+                class="glightbox"
+                data-gallery="project3"
+                data-title="المشروع الثالث: الإنارة المخفية"
+              ></a>
             </div>
           </div>
         </div>
       </div>
     </section>
-
     <section class="py-20 bg-solar-navy text-white">
       <div class="container mx-auto px-6 text-center">
         <h2 class="text-3xl font-black mb-16">ماذا يقول عملاؤنا؟</h2>
@@ -290,14 +350,14 @@
               "شكراً للمهندس على الأمانة في اختيار المكونات، وفر علينا مبالغ
               كبيرة كانت ستضيع في قطع غيار رديئة."
             </p>
-            <div class="font-bold text-solar-yellow">سالم العبدلي</div>
+            <div class="font-bold text-solar-yellow">م. رضوان الجبيري</div>
           </div>
           <div class="bg-white/5 p-8 rounded-2xl border border-white/10">
             <p class="italic mb-6 opacity-80">
               "شغل هندسي مرتب ونظيف في تمديدات المنزل، واللوحات الكهربائية منظمة
               جداً وسهلة الصيانة."
             </p>
-            <div class="font-bold text-solar-yellow">م. خالد القحطاني</div>
+            <div class="font-bold text-solar-yellow">م. فضل السرحي</div>
           </div>
         </div>
       </div>
@@ -400,5 +460,17 @@
         </span>
       </a>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // تفعيل Glightbox على جميع العناصر التي تحمل الكلاس 'glightbox'
+        const lightbox = GLightbox({
+          selector: ".glightbox",
+          touchNavigation: true,
+          loop: true,
+          autoplayVideos: true,
+        });
+      });
+    </script>
   </body>
 </html>
